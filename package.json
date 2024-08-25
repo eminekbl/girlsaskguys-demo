@@ -9,12 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
     "axios": "^1.7.5",
     "bootstrap": "^5.3.3",
     "vee-validate": "^4.13.2",
-    "vue": "^3.4.37",
-    "yup": "^1.4.0"
+    "vue": "^3.4.37"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
