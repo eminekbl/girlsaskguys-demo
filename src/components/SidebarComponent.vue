@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <div class="card my-3">
     <h4 class="title">Related Questions</h4>
@@ -24,6 +20,18 @@
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import {defineComponent} from 'vue';
+
+export default defineComponent({
+  name: "SidebarComponent",
+  setup() {
+    return {}
+  }
+});
+
+</script>
 
 <style scoped>
 .question {

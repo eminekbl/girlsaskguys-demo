@@ -174,12 +174,12 @@ header {
   border: 2px solid white;
   width: 32px;
   height: 32px;
-  margin-left: -16px; /* Önceki resmin ortasından başlamak için negatif margin */
+  margin-left: -16px;
   transition: all 0.3s ease;
 }
 
 .stacked-image:first-child {
-  margin-left: 0; /* İlk resim için margin yok */
+  margin-left: 0;
 }
 
 .stacked-image:hover {

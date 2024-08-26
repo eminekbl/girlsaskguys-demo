@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import UserComponent from "./UserComponent.vue";
-</script>
-
 <template>
   <div class="feed-card card my-3">
     <div class="row gap-3">
@@ -10,22 +6,36 @@ import UserComponent from "./UserComponent.vue";
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
         maxime perferendis.
       </h2>
-      <UserComponent />
+      <UserComponent/>
       <div class="subtitle">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
         molestias quam quis quos?
       </div>
       <div class="feed-image">
         <img
-          class="rounded w-100 h-100 object-fit-contain"
-          src="https://picsum.photos/682/486.webp"
-          alt=""
-          width="100%"
-          height="486"
+            class="rounded w-100 h-100 object-fit-contain"
+            src="https://picsum.photos/682/486.webp"
+            alt=""
+            width="100%"
+            height="486"
         />
       </div>
     </div>
   </div>
 </template>
+<script lang="ts">
+import UserComponent from "./UserComponent.vue";
+import {defineComponent} from "vue";
 
+export default defineComponent({
+  name: "FeedComponent",
+  components: {
+    UserComponent
+  },
+  setup() {
+    return {}
+  }
+})
+
+</script>
 <style scoped></style>

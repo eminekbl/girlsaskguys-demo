@@ -24,7 +24,6 @@
       </div>
 
 
-
     </div>
 
   </div>
@@ -85,6 +84,7 @@ export default defineComponent({
   gap: 20px;
   border-radius: 10px 0px 0px 0px;
 }
+
 .travel-guide-card .card-body {
   isplay: flex;
   flex-direction: column;

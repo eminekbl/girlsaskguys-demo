@@ -1,6 +1,6 @@
-import { defineRule } from 'vee-validate';
+import {defineRule} from 'vee-validate';
 
-// Zorunlu alan kuralı
+// Required Rule
 defineRule('required', (value: string): boolean | string => {
     if (!value || !value.trim()) {
         return 'This field is required.';
@@ -8,7 +8,7 @@ defineRule('required', (value: string): boolean | string => {
     return true;
 });
 
-// Tarih doğrulama kuralı
+// Date Rule
 defineRule('valid_date', (value: string): boolean | string => {
     if (!value) {
         return 'Please select a date.';
@@ -22,7 +22,7 @@ defineRule('valid_date', (value: string): boolean | string => {
     return true;
 });
 
-// Başlangıç tarihinden sonra olma kuralı
+// After Start Date Rule
 defineRule('after_start_date', (value: string, [target]: [string]): boolean | string => {
     if (!value || !target) {
         return 'Both start date and end date are required.';

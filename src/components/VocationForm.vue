@@ -1,7 +1,7 @@
 <template>
   <Form @submit="submitForm" class="d-flex flex-column gap-2">
 
-    <!-- Soru 1 -->
+    <!-- Question 1 -->
     <div class="form-group question-card">
       <label>Where do you want to go on vacation?</label>
       <Field
@@ -14,7 +14,7 @@
       <ErrorMessage name="vacationLocation" class="error-message"/>
     </div>
 
-    <!-- Soru 2 -->
+    <!-- Question 2 -->
     <div class="form-group question-card">
       <label>Which date ranges are suitable for you?</label>
       <div class="d-flex gap-4">
@@ -44,7 +44,7 @@
 
     </div>
 
-    <!-- Soru 3 -->
+    <!-- Question 3 -->
     <div class="form-group question-card">
       <label for="bookHotel">Would you also like to book a hotel?</label>
       <div class="form-check">
@@ -72,7 +72,7 @@
       <ErrorMessage name="bookHotel" class="error-message"/>
     </div>
 
-    <!-- Soru 4 -->
+    <!-- Question 4 -->
     <div class="form-group question-card">
       <label for="otherHelpSwitch">Do you need help with anything else about your vacation?</label>
       <div class="form-check">
@@ -101,10 +101,8 @@
         <label class="form-check-label" for="helpNo">No</label>
       </div>
 
-      <!-- Radio button için hata mesajı -->
       <ErrorMessage name="needHelp" class="error-message"/>
 
-      <!-- Radio button "Yes" seçeneğinde olduğunda görünür -->
       <div v-if="needHelp === 'yes'" class="mt-2">
         <Field
             name="otherHelpDetails"

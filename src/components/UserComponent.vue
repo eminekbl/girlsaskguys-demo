@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <div class="d-flex gap-2 align-items-center">
     <div class="">
@@ -18,6 +14,17 @@
     </div>
   </div>
 </template>
+<script lang="ts">
+import {defineComponent} from 'vue';
+
+export default defineComponent({
+  name: 'UserComponent',
+  setup() {
+    return {}
+  }
+});
+
+</script>
 
 <style scoped>
 .profile-image {
